@@ -1,4 +1,7 @@
 // -------------- THEME SWITCHER -------------- //
+// Google Fonts // Main site commonality
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 @mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color, $--highlight) {
   background-color: $--bg-color;
 
@@ -52,11 +55,11 @@
 }
 
 @mixin dark-appearance {
-  @include theme(#000000, #ffffff, #000000, #79a8ff, #f78fe7, #2f3849); // modus-vivendi
+  @include theme(#2e2e32, #ffffff, #2e2e32, #79a8ff, #f78fe7, #2f3849); // modus-vivendi // Main site commonality
 }
 
 @mixin light-appearance {
-  @include theme(#ffffff, #000000, #595959, #3548cf, #8f0075, #dae5ec); // modus-operandi
+  @include theme(#ffffff, #2e2e32, #595959, #3548cf, #8f0075, #dae5ec); // modus-operandi // Main site commonality
 }
 
 body[a="dark"] { @include dark-appearance; }
@@ -75,7 +78,7 @@ body[a="light"] { @include light-appearance; }
 html { height: 100%; }
 
 body {
-  font-family: monospace;
+  font-family: Lato, sans-serif; // Main site commonality
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
@@ -87,7 +90,7 @@ h2, h3, h4, h5, h6 { margin-top: 1.5rem; }
 
 p { margin: 1rem 0; }
 
-li { margin: 0.4rem 0; }
+li { margin: 0.4rem 0; } // Have to change this but first test it
 
 a {
   text-decoration: none;
@@ -171,11 +174,69 @@ details[open] summary {
 }
 
 .w {
-  max-width: 640px;
+  max-width: 60%; // Main site commonality
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 14px; // Main site commonality
 }
 
 .toc {
   padding: 1rem;
+}
+
+// Custom Navbar CSS settings
+
+.navbar ul{
+  list-style-type: none;
+  background-color: #ffffff;
+  margin: 2px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  border-radius: 6px;
+}
+
+.navbar a{
+  color: #2e2e32;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+.navbar a:hover{
+  background-color: #2e2e32;
+  color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 6px;
+}
+.navbar a.active{
+  background-color: #2e2e32;
+  color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 6px;
+}
+
+
+.navbar li{
+  float: left;
+}
+
+// Navbar custom ends
+
+// Mobile Friendly CSS Settings
+
+@media screen and (max-width: 600px) {
+  .w{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+
 }
