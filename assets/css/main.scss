@@ -184,47 +184,47 @@ details[open] summary {
 }
 
 // Custom Navbar CSS settings
-
+// !important is important or pre-exist css will override my navbar
 .navbar ul{
-  list-style-type: none;
-  background-color: #ffffff;
-  margin: 2px;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  border-radius: 6px;
+  list-style-type: none !important;
+  background-color: #ffffff !important;
+  margin: 2px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  display: flex !important;
+  border-radius: 6px !important;
 }
 
 .navbar a{
-  color: #2e2e32;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding: 14px;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+  color: #2e2e32 !important;
+  text-decoration: none !important;
+  display: block !important;
+  text-align: center !important;
+  padding: 14px !important;
+  border-top: 2px solid transparent !important;
+  border-left: 2px solid transparent !important;
+  border-bottom: 2px solid transparent !important;
 }
 .navbar a:hover{
-  background-color: #2e2e32;
-  color: #ffffff;
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  border-radius: 6px;
+  background-color: #2e2e32 !important;
+  color: #ffffff !important;
+  border-top: 2px solid #ffffff !important;
+  border-left: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  border-radius: 6px !important;
 }
 .navbar a.active{
-  background-color: #2e2e32;
-  color: #ffffff;
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  border-radius: 6px;
+  background-color: #2e2e32 !important;
+  color: #ffffff !important;
+  border-top: 2px solid #ffffff !important;
+  border-left: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  border-radius: 6px !important;
 }
 
 
 .navbar li{
-  float: left;
+  float: left !important;
 }
 
 // Navbar custom ends
