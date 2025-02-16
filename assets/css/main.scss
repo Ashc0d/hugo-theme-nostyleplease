@@ -238,7 +238,9 @@ details[open] summary {
 }
 
 @media screen and (max-height: 600px) {
-  position: relative;
+  .site-footer{
+    position: relative;
+  }
 }
 
 // Custom Footer Settings
