@@ -229,6 +229,14 @@ details[open] summary {
 
 // Navbar custom ends
 
+.site-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
 // Mobile Friendly CSS Settings
 
 @media screen and (max-width: 600px) {
@@ -241,13 +249,4 @@ details[open] summary {
   .site-footer{
     position: relative;
   }
-}
-
-// Custom Footer Settings
-.site-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: #000000;
 }
