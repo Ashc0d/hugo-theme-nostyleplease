@@ -238,5 +238,14 @@ details[open] summary {
 }
 
 @media screen and (max-height: 600px) {
+  position: relative;
+}
 
+// Custom Footer Settings
+.site-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #000000;
 }
